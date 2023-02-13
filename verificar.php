@@ -95,7 +95,7 @@
                   
                   if($confere == $cpf){
                     echo "<p class='valido'>CPF VALIDO!</p>";
-                    echo "<a href='cadastrar.php'>PROCEGUIR</a>";
+                    echo "<a href='cadastrar.php'>PROSSEGUIR</a>";
                     echo "<a href='index.php'>VOLTAR</a>";
                   }else{
                     echo "<p class='invalido'>CPF INVALIDO!</p>";

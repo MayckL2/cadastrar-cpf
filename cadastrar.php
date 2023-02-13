@@ -43,9 +43,10 @@
     }
     input[type="submit"], input[type="reset"]{
       border-radius: 20px;
-      padding: 5px 30px;
+      padding: 5px;
       transition: all 0.5s;
       width: 150px;
+      color: blue;
     }
     input[type="submit"]:hover, input[type="reset"]:hover{
       background-color: gray;
@@ -96,7 +97,7 @@
         </div>
 
         <!-- <a href="visualizar.php">Proceguir</a> -->
-        <input type="submit">
+        <input type="submit" value="PROSSEGUIR">
         <a href="Index.php">Index</a>
     </form>    
 </body>
