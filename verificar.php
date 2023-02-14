@@ -94,9 +94,15 @@
                   $confere[10] = 11 - $total%11;
                   
                   if($confere == $cpf){
-                    echo "<p class='valido'>CPF VALIDO!</p>";
-                    echo "<a href='cadastrar.php'>PROSSEGUIR</a>";
-                    echo "<a href='index.php'>VOLTAR</a>";
+                    if($cpf[0] == $cpf[1] and $cpf[3] == $cpf[4] and $cpf[5] == $cpf[6] and $cpf[7] == $cpf[8]){
+                      echo "<p class='invalido'>CPF INVALIDO!</p>";
+                      echo "<a href='index.php'>VOLTAR</a>";
+                      unset($_SESSION['cpf']);
+                    }else{
+                      echo "<p class='valido'>CPF VALIDO!</p>";
+                      echo "<a href='cadastrar.php'>PROSSEGUIR</a>";
+                      echo "<a href='index.php'>VOLTAR</a>";
+                    }
                   }else{
                     echo "<p class='invalido'>CPF INVALIDO!</p>";
                     echo "<a href='index.php'>VOLTAR</a>";
